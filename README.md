@@ -71,6 +71,8 @@ multi-agent-report-gen/
 ├── app.py               # Main entry point
 ├── requirements.txt     # Dependencies
 └── README.md            # Documentation
+```
+
 
 ## ⚙️ Installation & Setup
 
