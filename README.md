@@ -130,5 +130,5 @@ Strong separation of responsibilities (clean architecture)
 Practical application of AI-driven system design concepts
 👨‍💻 Author
 
-Your Name
+K AKHIL KUMAR
 AI & Software Development Enthusiast
