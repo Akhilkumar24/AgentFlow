@@ -121,10 +121,26 @@ This project is optimized for deployment on **Render** as a Background Worker or
 
 1.  **Connect GitHub:** Link your repository to the Render Dashboard.
 2.  **Service Type:** Select **Python** as the runtime.
-3.  **Build Command:** ```bash
+3.  **Build Command:** 
+```bash
     pip install -r requirements.txt
-    ```
-4.  **Start Command:** ```bash
+``` 
+
+4.  **Start Command:** 
+``` bash
     python app.py
-    ```
-5.  **Environment Variables:** Add your `.env` keys (like `OPENAI_API_KEY`) in the Render "Environment" tab to ensure secure execution.
+```
+
+
+
+5.  **Environment Variables:** 
+```bash
+Add your `.env` keys (like `OPENAI_API_KEY`) in the Render "Environment" tab to ensure secure execution.
+```
+
+## Author 
+
+Name : K AKHIL KUMAR
+AI & ML Software Enthuasist
+
+
