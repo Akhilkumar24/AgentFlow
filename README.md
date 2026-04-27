@@ -74,10 +74,10 @@ multi-agent-report-gen/
 ## ⚙️ Installation & Setup
 
 1.  **Clone the Repository:**
-    bash
+    ```bash
     git clone [https://github.com/your-username/multi-agent-report-gen.git](https://github.com/your-username/multi-agent-report-gen.git)
     cd multi-agent-report-gen
-    
+    ```
 
 2.  **Create Virtual Environment:**
     ```bash
