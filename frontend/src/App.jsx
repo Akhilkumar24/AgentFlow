@@ -27,7 +27,8 @@ function App() {
     if (intervalRef.current) clearInterval(intervalRef.current);
 
     try {
-      const res = await fetch('http://localhost:8000/api/run-task', {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const res = await fetch(`${apiUrl}/api/run-task`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ goal })
@@ -48,7 +49,8 @@ function App() {
 
   const checkStatus = async (id) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/status/${id}`);
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const res = await fetch(`${apiUrl}/api/status/${id}`);
       if (!res.ok) return;
       const result = await res.json();
       
