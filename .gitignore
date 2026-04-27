@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Storage
+memory.json
+*.log
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend (if not already ignored in frontend folder)
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.production.local

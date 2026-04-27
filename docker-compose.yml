@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: agentflow_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+      # Exclude certain folders from bind mount if needed
+      - /app/frontend/node_modules
+    env_file:
+      - .env
+    restart: unless-stopped
