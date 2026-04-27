@@ -53,7 +53,7 @@ The system follows a **sequential and iterative multi-agent design**, where the 
 ---
 
 ## 📁 Project Structure
-```text
+
 multi-agent-report-gen/
 ├── agents/
 │   ├── planner.py       # Task decomposition logic
@@ -70,3 +70,58 @@ multi-agent-report-gen/
 ├── app.py               # Main entry point
 ├── requirements.txt     # Dependencies
 └── README.md            # Documentation
+
+## ⚙️ Installation & Setup
+
+1.  **Clone the Repository:**
+    bash
+    git clone [https://github.com/your-username/multi-agent-report-gen.git](https://github.com/your-username/multi-agent-report-gen.git)
+    cd multi-agent-report-gen
+    
+
+2.  **Create Virtual Environment:**
+    ```bash
+    # Create the environment
+    python -m venv venv
+
+    # Activate it (MacOS/Linux)
+    source venv/bin/activate  
+
+    # Activate it (Windows)
+    # venv\Scripts\activate
+    ```
+
+3.  **Install Dependencies:**
+    ```bash
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    ```
+
+4.  **Configure Environment:**
+    Create a `.env` file in the root directory and add your credentials:
+    ```text
+    OPENAI_API_KEY=your_api_key_here
+    LOG_LEVEL=INFO
+    REPORT_OUTPUT_DIR=./reports
+    ```
+
+5.  **Run the Application:**
+    ```bash
+    python app.py
+    ```
+
+---
+
+## 🌐 Deployment (Render)
+
+This project is optimized for deployment on **Render** as a Background Worker or Web Service.
+
+1.  **Connect GitHub:** Link your repository to the Render Dashboard.
+2.  **Service Type:** Select **Python** as the runtime.
+3.  **Build Command:** ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Start Command:** ```bash
+    python app.py
+    ```
+5.  **Environment Variables:** Add your `.env` keys (like `OPENAI_API_KEY`) in the Render "Environment" tab to ensure secure execution.
