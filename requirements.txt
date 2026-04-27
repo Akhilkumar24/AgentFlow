@@ -5,3 +5,6 @@ pydantic
 tenacity
 python-dotenv
 duckduckgo-search
+requests
+beautifulsoup4
+lxml
