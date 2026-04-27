@@ -54,6 +54,7 @@ The system follows a **sequential and iterative multi-agent design**, where the 
 
 ## 📁 Project Structure
 
+```text
 multi-agent-report-gen/
 ├── agents/
 │   ├── planner.py       # Task decomposition logic
